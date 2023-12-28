@@ -2,9 +2,9 @@
 # Contributing
 
 Antes de contribuir en este repositorio, por favor
- * lee el [README.md](https://github.com/ORGNAME/PROJECTNAME/blob/main/README.md),
- * lee nuestro [CODE_OF_CONDUCT.md](https://github.com/ORGNAME/PROJECTNAME/blob/main/CODE_OF_CONDUCT.md),
- * revisa los [issues](https://github.com/ORGNAME/PROJECTNAME/issues),
+ * lee el [README.md](https://github.com/enzodiazdev/AdventureMaker/blob/main/README.md),
+ * lee nuestro [CODE_OF_CONDUCT.md](https://github.com/enzodiazdev/AdventureMaker/blob/main/CODE_OF_CONDUCT.md),
+ * revisa los [issues](https://github.com/enzodiazdev/AdventureMaker/issues),
  * considera formar parte de la discusión en [nuestra comunidad](),
  * si es tu primera vez, lee un resumen de cómo contribuir: [Contribuir por primera vez en Github](https://gist.github.com/EnzoDiazDev/31e73d0573142d0573eb58d69a5158fd)
  * termina de leer este archivo. 
