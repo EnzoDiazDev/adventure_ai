@@ -1,11 +1,11 @@
 {
-  "name": "adventuremaker",
+  "name": "adveture_ia",
   "author": "enzodiazdev",
   "description": "...",
   "version": "1.0.0",
   "license": "MIT",
   "keywords": [
-    "AdventureMaker"
+    "adveture_ia"
   ],
   "main": "dist/Main.js",
   "engines": {
@@ -23,14 +23,14 @@
     "test:coverage": "jest --config jest.config.json --coverage",
     "format": "eslint --fix --ext .ts ./src"
   },
-  "homepage": "https://github.com/enzodiazdev/AdventureMaker#readme",
+  "homepage": "https://github.com/enzodiazdev/adveture_ia#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enzodiazdev/AdventureMaker.git",
-    "directory": "AdventureMaker"
+    "url": "git+https://github.com/enzodiazdev/adveture_ia.git",
+    "directory": "adveture_ia"
   },
   "bugs": {
-    "url": "https://github.com/enzodiazdev/AdventureMaker/issues",
+    "url": "https://github.com/enzodiazdev/adveture_ia/issues",
     "email": "sendto@email.com"
   },
   "config": {
