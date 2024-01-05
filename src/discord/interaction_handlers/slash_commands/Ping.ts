@@ -1,8 +1,5 @@
 import * as Discord from 'discord.js';
 
-new Discord.SlashCommandBuilder();
-new Discord.ContextMenuCommandBuilder();
-
 import InteractionHandler from '../InteractionHandler';
 
 export default class Ping extends Discord.SlashCommandBuilder implements InteractionHandler {
