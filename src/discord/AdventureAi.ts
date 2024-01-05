@@ -17,7 +17,12 @@ export default class AdventureAi extends Discord.Client {
     try {
       await this.login(token);
 
-      await this.application.commands.create(InteractionHandlers.getApplicationCommand('ping'));
+      const createInteractions = InteractionHandlers
+        .getAllApplicationCommands()
+        .map(applicationCommand => this.application.commands.create(applicationCommand));
+
+      await Promise.all(createInteractions);
+
     } catch(error) {
       console.error(error);
       throw new Error(error);
