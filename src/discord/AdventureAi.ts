@@ -10,8 +10,8 @@ export default class AdventureAi extends Discord.Client {
     //this.onInteractionCreateHandler.setInteractionHandler(this.ping);
 
     this
-      .on('ready', (...payload) => EventHandlers.getEventHandler('ready').handle(...payload))
-      .on('interactionCreate', (...payload) => EventHandlers.getEventHandler('interactionCreate').handle(...payload));
+      .on('ready', (...payload) => EventHandlers.get('ready').handle(...payload))
+      .on('interactionCreate', (...payload) => EventHandlers.get('interactionCreate').handle(...payload));
   }
 
   public async start(token:string):Promise<void> {

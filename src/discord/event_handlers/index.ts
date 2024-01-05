@@ -16,7 +16,7 @@ export default class EventHandlers {
     return handler;
   }
 
-  public static getEventHandler<Event extends keyof Discord.ClientEvents>(event:Event):EventHandler<Event> {
+  public static get<Event extends keyof Discord.ClientEvents>(event:Event):EventHandler<Event> {
     switch(event) {
       case 'ready':
         return this.onReady as EventHandler<Event>;
