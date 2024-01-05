@@ -18,7 +18,7 @@ export default class Ping extends Discord.SlashCommandBuilder implements Interac
 
     public async handle(interaction:Discord.ChatInputCommandInteraction) {
       try {
-        interaction.reply('Pong!');
+        await interaction.reply('Pong!');
       }
       catch(error) {
         console.error(error);

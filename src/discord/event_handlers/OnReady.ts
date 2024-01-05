@@ -6,7 +6,7 @@ export default class OnReady implements EventHandler<'ready'> {
   public readonly version = 1;
   public readonly event = 'ready';
 
-  public async handle(_client:Discord.Client):Promise<void> {
+  public async handle(client:Discord.Client):Promise<void> {
     try {
       console.log('Listo para interactuar.');
     } catch(error) {
