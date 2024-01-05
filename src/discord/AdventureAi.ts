@@ -1,13 +1,12 @@
 import * as Discord from 'discord.js';
 
 import EventHandlers from './event_handlers';
+import InteractionHandlers from './interaction_handlers';
 
 export default class AdventureAi extends Discord.Client {
 
   constructor(options:Discord.ClientOptions) {
     super(options);
-
-    //this.onInteractionCreateHandler.setInteractionHandler(this.ping);
 
     this
       .on('ready', (...payload) => EventHandlers.get('ready').handle(...payload))
@@ -18,7 +17,7 @@ export default class AdventureAi extends Discord.Client {
     try {
       await this.login(token);
 
-      //await this.application.commands.create(this.ping);
+      await this.application.commands.create(InteractionHandlers.getApplicationCommand('ping'));
     } catch(error) {
       console.error(error);
       throw new Error(error);
