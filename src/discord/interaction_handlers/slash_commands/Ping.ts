@@ -2,13 +2,13 @@ import * as Discord from 'discord.js';
 
 import InteractionHandler from '../InteractionHandler';
 
-export default class Ping extends Discord.SlashCommandBuilder implements InteractionHandler {
+export default class Ping implements InteractionHandler {
     public readonly version = 1;
+    public readonly command = new Discord.SlashCommandBuilder();
 
     constructor() {
-      super();
 
-      this
+      this.command
         .setName('ping')
         .setDescription('Responde con un pong!');
     }

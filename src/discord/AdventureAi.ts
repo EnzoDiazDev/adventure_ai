@@ -1,12 +1,18 @@
 import * as Discord from 'discord.js';
 
+import Game from 'src/game/Game';
+
 import EventHandlers from './event_handlers';
 import InteractionHandlers from './interaction_handlers';
+import SlashCommands from './interaction_handlers/slash_commands';
 
 export default class AdventureAi extends Discord.Client {
+  /** Provisorio por falta de base de datos */
+  public readonly games = new Map<string, Game>();
 
   constructor(options:Discord.ClientOptions) {
     super(options);
+    SlashCommands.client = this;
 
     this
       .on('ready', (...payload) => EventHandlers.get('ready').handle(...payload))
