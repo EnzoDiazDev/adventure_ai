@@ -1,11 +1,11 @@
 {
-  "name": "adveture_ia",
+  "name": "adventure_ai",
   "author": "enzodiazdev",
   "description": "...",
   "version": "1.0.0",
   "license": "MIT",
   "keywords": [
-    "adveture_ia"
+    "adventure_ai"
   ],
   "main": "dist/Main.js",
   "engines": {
@@ -23,14 +23,14 @@
     "test:coverage": "jest --config jest.config.json --coverage",
     "format": "eslint --fix --ext .ts ./src"
   },
-  "homepage": "https://github.com/enzodiazdev/adveture_ia#readme",
+  "homepage": "https://github.com/enzodiazdev/adventure_ai#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enzodiazdev/adveture_ia.git",
-    "directory": "adveture_ia"
+    "url": "git+https://github.com/enzodiazdev/adventure_ai.git",
+    "directory": "adventure_ai"
   },
   "bugs": {
-    "url": "https://github.com/enzodiazdev/adveture_ia/issues",
+    "url": "https://github.com/enzodiazdev/adventure_ai/issues",
     "email": "sendto@email.com"
   },
   "config": {
